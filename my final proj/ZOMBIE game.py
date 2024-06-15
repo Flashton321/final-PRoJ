@@ -27,7 +27,10 @@ class Charlie(simpleGE.Sprite):
         if self.scene.isKeyPressed(pygame.K_LEFT):
             self.x -= 5   
         if self.scene.isKeyPressed(pygame.K_UP):
+        
+        if self.scene.isKeyPressed(pygame.K_SPACE):
             
+        
             if not self.inAir:
                 self.addForce(7, 90)
                 self.inAir = True
@@ -91,6 +94,15 @@ class WALLLE(simpleGE.Sprite):
             self.position = pygame.mouse.get_pos()
 
 
+class bullet (simpleGE.sprite):
+    
+    def __init__(self,scene, postion):
+        super().__init__(scene)
+        self.position = (Charlie)
+        self.colorRect("#cornsilk", (10, 50))
+        
+        if 
+        
 
 #class objecttive:
                 
